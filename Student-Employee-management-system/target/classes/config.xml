@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Employee bean -->
+    <bean id="employee" class="com.jagannath.Employee" autowire="byType">
+        <property name="name" value="jagannath"/>
+        <property name="salary" value="20000"/>
+
+    </bean>
+
+    <!-- dept bean -->
+    <bean id="it" class="com.jagannath.IT"/>
+<!--    <bean id="hr" class="com.jagannath.HR"/>-->
+<!--    <bean id="fin" class="com.jagannath.Finance"/>-->
+
+</beans>
